@@ -1,1 +1,1 @@
-# Nubank Creadit Card with Pure CSS
+# Nubank Credit Card with Pure CSS
