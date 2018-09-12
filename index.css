@@ -15,6 +15,9 @@ body {
   margin: 0;
   padding: 0;
   background: #c2e59c;
+  background: -webkit-gradient(linear, left top, right top, from(#64b3f4), to(#c2e59c));
+  background: -webkit-linear-gradient(left, #64b3f4, #c2e59c);
+  background: -o-linear-gradient(left, #64b3f4, #c2e59c);
   background: linear-gradient(to right, #64b3f4, #c2e59c);
 }
 
@@ -24,13 +27,20 @@ body {
   height: var(--height);
   width: var(--width);
   min-width: var(--width);
+  background: -webkit-gradient(linear, left top, right top, from(var(--purple)), to(var(--purple2)));
+  background: -webkit-linear-gradient(left, var(--purple), var(--purple2));
+  background: -o-linear-gradient(left, var(--purple), var(--purple2));
   background: linear-gradient(90deg, var(--purple), var(--purple2));
   border-radius: 10px;
-  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.2);
   margin: 10px auto;
   position: relative;
-  filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
-  transform: translateY(calc(50% - 10px));
+  -webkit-filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(3px 3px 3px rgba(0, 0, 0, 0.6));
+  -webkit-transform: translateY(calc(50% - 10px));
+      -ms-transform: translateY(calc(50% - 10px));
+          transform: translateY(calc(50% - 10px));
 }
 
 .card__figure {
@@ -55,17 +65,23 @@ body {
   width: var(--widthLogo);
   position: absolute;
   right: 50%;
-  transform: translate(calc(var(--widthLogo) / 2), 20px);
+  -webkit-transform: translate(calc(var(--widthLogo) / 2), 20px);
+      -ms-transform: translate(calc(var(--widthLogo) / 2), 20px);
+          transform: translate(calc(var(--widthLogo) / 2), 20px);
 }
 
 .card__reader {
   width: 50px;
   height: 40px;
+  background: -webkit-radial-gradient(#d9a56c, #b18457);
+  background: -o-radial-gradient(#d9a56c, #b18457);
   background: radial-gradient(#d9a56c, #b18457);
   border-radius: 5px;
   position: absolute;
   top: 50%;
-  transform: translate(33px, -40px);
+  -webkit-transform: translate(33px, -40px);
+      -ms-transform: translate(33px, -40px);
+          transform: translate(33px, -40px);
 }
 
 .card__reader--risk {
@@ -79,19 +95,27 @@ body {
 }
 
 .card__reader--risk-one {
-  transform: translate(37px, 15px);
+  -webkit-transform: translate(37px, 15px);
+      -ms-transform: translate(37px, 15px);
+          transform: translate(37px, 15px);
 }
 
 .card__reader--risk-two {
-  transform: translate(15px, 30px);
+  -webkit-transform: translate(15px, 30px);
+      -ms-transform: translate(15px, 30px);
+          transform: translate(15px, 30px);
 }
 
 .card__reader--risk-three {
-  transform: translate(-37px, -15px);
+  -webkit-transform: translate(-37px, -15px);
+      -ms-transform: translate(-37px, -15px);
+          transform: translate(-37px, -15px);
 }
 
 .card__reader--risk-four {
-  transform: translate(-15px, -30px);
+  -webkit-transform: translate(-15px, -30px);
+      -ms-transform: translate(-15px, -30px);
+          transform: translate(-15px, -30px);
 }
 
 .card__number {
@@ -105,7 +129,8 @@ body {
   margin-top: 80px;
   z-index: 1;
   position: relative;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
 }
 
 .card__number::before,
@@ -119,29 +144,40 @@ body {
 
 .card__number::before {
   content: "5032";
-  transform: translate(15px, 25px);
+  -webkit-transform: translate(15px, 25px);
+      -ms-transform: translate(15px, 25px);
+          transform: translate(15px, 25px);
 }
 
 .card__number::after {
   content: "Valid thru";
   width: 80px;
-  transform: translate(-215px, 25px);
+  -webkit-transform: translate(-215px, 25px);
+      -ms-transform: translate(-215px, 25px);
+          transform: translate(-215px, 25px);
 }
 
 .card__dates {
   position: absolute;
   width: 40%;
   font-size: 1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   color: var(--white);
   font-family: var(--font);
   bottom: 20%;
-  transform: translate(60px, 0px);
+  -webkit-transform: translate(60px, 0px);
+      -ms-transform: translate(60px, 0px);
+          transform: translate(60px, 0px);
 }
 
 .card__dates span {
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
 }
 
 .card__name {
@@ -150,16 +186,21 @@ body {
   font-weight: normal;
   color: var(--white);
   letter-spacing: 2.5px;
-  transform: translate(35px, 25px);
+  -webkit-transform: translate(35px, 25px);
+      -ms-transform: translate(35px, 25px);
+          transform: translate(35px, 25px);
   position: relative;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
 }
 
 .card__flag {
   right: 30px;
   top: 45%;
   border-radius: 25px;
-  transform: translate(0, -28px);
+  -webkit-transform: translate(0, -28px);
+      -ms-transform: translate(0, -28px);
+          transform: translate(0, -28px);
   position: absolute;
   height: 110px;
   width: 80px;
@@ -173,6 +214,20 @@ body {
   height: 50%;
   border-radius: 20px;
   margin: var(--margin);
+  background: -webkit-repeating-linear-gradient(
+    bottom,
+    #dbd1dc,
+    #dbd1dc 5px,
+    #b2aab5 7px,
+    #b2aab5 5px
+  );
+  background: -o-repeating-linear-gradient(
+    bottom,
+    #dbd1dc,
+    #dbd1dc 5px,
+    #b2aab5 7px,
+    #b2aab5 5px
+  );
   background: repeating-linear-gradient(
     0deg,
     #dbd1dc,
@@ -194,11 +249,15 @@ body {
 }
 
 .card__flag--globe::after {
-  transform: translateX(10px);
+  -webkit-transform: translateX(10px);
+      -ms-transform: translateX(10px);
+          transform: translateX(10px);
 }
 
 .card__flag--globe::before {
-  transform: translateX(25px);
+  -webkit-transform: translateX(25px);
+      -ms-transform: translateX(25px);
+          transform: translateX(25px);
 }
 
 .card__flag--red {
@@ -224,12 +283,15 @@ body {
   position: absolute;
   font-size: 0.7em;
   top: 50%;
-  transform: translate(-25px, -7px);
+  -webkit-transform: translate(-25px, -7px);
+      -ms-transform: translate(-25px, -7px);
+          transform: translate(-25px, -7px);
   font-family: var(--masterFont);
   font-style: italic;
   font-weight: 800;
   color: var(--white);
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
 }
 
 .assign {
@@ -238,7 +300,8 @@ body {
   font-family: var(--masterFont);
   color: #fff;
   font-size: 0.8em;
-  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+  -webkit-filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
+          filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.3));
 }
 
 .assign a {
